@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap");
+
+body {
+  background-color: #1c1d21;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  padding: 1rem 0.5rem;
+  font-size: 0.9rem;
+}
+pre {
+  margin: 0;
+}
+#code-display {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 1rem;
+}
+.line-numbers {
+  color: #7d7d7d;
+  font-family: monospace;
+  text-align: end;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+textarea {
+  background-color: transparent;
+  resize: none;
+  width: 100%;
+  padding: 0;
+  margin-left: 1rem;
+  color: #c0c5ce;
+  min-height: calc(100vh - 2rem);
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+.buttons-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+  transition: opacity 200ms ease-in-out;
+  background-color: #333437;
+  padding: 1rem;
+}
+.buttons-wrapper:hover {
+  opacity: 1;
+}
+.logo {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: inline-block;
+}
+.logo:hover {
+  text-decoration: underline;
+}
+.buttons {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+.buttons > * + * {
+  margin-left: 0.25rem;
+}
+.btn {
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 0%;
+  padding: 0.25rem 0.5rem;
+  transition: background-color ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: white;
+  color: #1c1d21;
+}

@@ -1,0 +1,3 @@
+{
+    "MongoDBURI": "your MongoDB connection string here"
+}
