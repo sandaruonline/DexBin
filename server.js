@@ -4,7 +4,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-const { MongoDBURI } = require("./config.json")
+const { MongoDBURI } = require("./config.json");
 
 const Document = require("./models/Document");
 mongoose.connect(MongoDBURI, {
