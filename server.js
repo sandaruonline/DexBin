@@ -10,7 +10,7 @@ const Document = require("./models/Document");
 mongoose.connect(MongoDBURI, {
     useUnifiedTopology: true,
     useNewUrlParser: true
-}).then(() => console.log('Connected to MongoDB'));
+}).then(() => console.log("Connected to MongoDB"));
 
 app.get("/", (req, res) => {
 
