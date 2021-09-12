@@ -4,6 +4,10 @@ const documentScheme = new mongoose.Schema({
     value: {
         type: String,
         required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now
     }
 });
 
