@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
 Use the button in the top right corner to create a new paste to share with others.
 
-Made with ❤ by Sandaru Fernando <hello@sandaru.dev>`
+Made with ❤️ by Sandaru Fernando <hello@sandaru.dev>`
     
     res.render("code-display", { code, language: "plaintext" });
 });
