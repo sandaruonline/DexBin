@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
@@ -5,10 +6,9 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-const { MongoDBURI } = require("./config.json");
 
 const Document = require("./models/Document");
-mongoose.connect(MongoDBURI, { useUnifiedTopology: true, useNewUrlParser: true }).then(() => console.log("Connected to MongoDB"));
+mongoose.connect(process.env.MONGO, { useUnifiedTopology: true, useNewUrlParser: true }).then(() => console.log("Connected to MongoDB"));
 
 const pasteRateLimiter = rateLimit({
     windowMs: 10000,
